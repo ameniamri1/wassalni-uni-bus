@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+body {
+    background-color: #111;
+}
+
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #222; /* Correction ici */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+header .logo a {
+    font-size: 25px;
+    color: #ffc61a;
+    text-decoration: none;
+}
+
+header .logo a span {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-reservation {
+    color: #ffc61a;
+    font-size: 14px;
+    border: 2px solid #ffc61a;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-reservation:hover {
+    background-color: #ffc61a;
+    color: whitesmoke;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+
+/* ... Reste du code ... */
+
+/*Home acceuil css*/
+
+#home {
+    position: relative;
+    height: calc(100vh - 50px);
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; /* Réglez l'opacité selon vos préférences */
+}
+.text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Ajoutez votre couleur de texte */
+    max-width: 600px; /* Ajoutez la largeur maximale que vous souhaitez */
+}
+.text-content p {
+    margin-bottom: 20px; /* Ajoutez un espacement en bas pour éviter le chevauchement avec le bouton */
+}
+.btn-reservation.home-btm {
+    margin-top: 10px; /* Ajoutez un espacement au-dessus du bouton */
+}
+#home h2{
+    font-size :45px; 
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 1px;
+    color: transparent;
+    
+
+}
+#home h4{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+}
+#home p{
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.home-btm{
+    margin-bottom: 20px;
+
+}
+.find_trip {
+    background-color: transparent;
+    padding: 20px;
+    width: 70%;
+    position: absolute;
+    bottom: -140px;
+}
+
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.find_trip form div,
+.find_trip form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffc61a;
+    width: 90%;
+}
+
+.find_trip form label {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.find_trip form input {
+    padding: 5px 20px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    border: 2px solid #ffc61a;
+    font-size: 20px;
+    margin-left: 10PX;
+    outline: 0;
+}
+
+.find_trip form input::placeholder {
+    font-size: 16px;
+    color:#ffc61a;
+    background-color: whitesmoke;
+}
+.find_trip form input[type="submit"]{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.find_trip form input[type="submit"]:hover{
+    box-shadow: 0 0 20px;
+}
+/*Apropos css */
+#a-propos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+    width: 100%;
+
+}
+.title{
+    text-transform:capitalize ;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #ffc61a;
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+
+}
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.img-desc .left{
+    position: relative;
+    margin-left:10px ;
+    height: 150px;
+    
+
+}
+.img-desc .right{
+    width: 57%;
+    margin-left: 30px;
+
+}
+.img-desc .left video {
+    width: 300PX;
+    height: 150px;
+    position: relative;
+    box-shadow:0 0 10px #ffc61a ;
+}
+.img-desc .right h3{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.img-desc .right p{
+    color: #999;
+    font: 14px;
+    margin-bottom: 36px;
+
+}
+.img-desc .right a {
+    border: 1px solid #ffc61a;
+    font-size: 14px;
+    padding: 8px;
+    font-weight: bold;
+    color: #999;
+}
+/* DESTINATION*/
+#popular-destination{
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+#popular-destination .content{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+    gap: 32px;
+}
+#popular-destination .content .box{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    transition: 0.5s;
+}
+#popular-destination .content .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box .content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: 0.5s;
+
+}
+.box .content h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+.box .content p{
+    padding: 2px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.box .content p :nth-child(3){
+    margin-bottom :25px; 
+}
+.box .content a{
+    margin-top: 60px;
+    padding: 10px 60PX;
+    border: 2px solid #ffc61a;
+    color: #ffc61a;
+    font-weight: bold;
+}
+.box:hover{
+    box-shadow: 0 0 40PX #ffc61a;
+}
+.box:hover .content{
+    transform: translateX(0);
+}
+
+
+/*contact css*/
+#contact{
+    padding: 0 10%;
+    margin-bottom: 50px;
+    height: 90vh;
+}
+#contact form{
+    background-color:#fff ;
+    margin:auto;
+    display:flex ;
+    flex-direction: column;
+    padding: 20px;
+}
+.left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.left-right .left , .left-right .right{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+#contact form label {
+    font-size: 14px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+#contact form input {
+    padding: 8px;
+    outline: 0;
+    border: 1px solid #999 ;
+}
+textarea {
+    height: 150px;
+    resize: none;
+    outline: 0;
+    width:100% ;
+    padding: 10px;
+}
+#contact form input:focus , textarea:focus{
+    border:1px solid #ffc61a;
+}
+iframe{
+    height: 150px;
+    width: 100%;
+}
+#contact button{
+    width: fit-content;
+    padding: 8px 40px;
+    background-color: #111;
+    border: 1px solid #111;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#contact button:hover{
+    letter-spacing: 2px;
+}
+footer{
+    width: 100%;
+    background-color: #222;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+}
+footer p span{
+    color:#ffc61a;
+}
+/*responsive*/
+@media(max-width:750px){
+    header .menu{
+        display: none;
+
+    }
+    .btn-reservation{display: none;}
+    #home h2{
+        font-size: 18px;
+        -webkit-text-stroke: 0;
+        color: #fff;
+    }
+    #home h4{
+        font-size: 28px;
+
+    }
+    #home p{
+        text-align: center;
+        font-size: 10px;
+
+    }
+    .find_trip{width: 100%;
+    height: 200px;}
+    .find_trip form{
+        flex-wrap: wrap;
+
+    }
+    .find_trip form div {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 47%;
+    }
+    .find_trip form input[type="submit"]{
+      width: 47%;  
+    }
+    .home-btm{
+        display: block;
+    }
+    .img-desc{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .img-desc .left , .img-desc .right{
+       width:100%; 
+    }
+    .img-desc .left video{
+        width: 100%;
+    }
+    .img-desc .left::after{
+        background-color: transparent;
+    }
+    .img-desc .left{margin-bottom: 20px;
+    }
+    @keyframes animate-menu {
+        0%{
+           transform: translateY(0); 
+        }
+        100%{
+            transform: translateY(100); 
+         }
+    }
+}
+
