@@ -87,7 +87,6 @@ header .logo a span {
     border-radius: 15px;
 }
 
-/* ... Reste du code ... */
 
 /*Home acceuil css*/
 
@@ -246,7 +245,7 @@ header .logo a span {
     margin-left: 30px;
 
 }
-.img-desc .left video {
+.img-desc .left iframe {
     width: 300PX;
     height: 150px;
     position: relative;

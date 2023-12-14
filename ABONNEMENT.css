@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,200,300,400,500,600,700&display=swap');
+header {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+header .logo a {
+    font-size: 25px;
+    color: #CA7C5C;
+    text-decoration: none;
+}
+
+header .logo a span {
+    color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    font-family: "Poppins" , sans-serif;
+
+}
+
+body{
+    background: #eceaea; ;
+}
+.wrapper{
+    margin: 10px auto;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+h1{
+    color: #A1A27E;
+    font-size: 45px;
+    padding-top: 20PX;
+    padding-bottom: 70px;
+    text-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.container{
+    display: flex;
+    
+    gap: 15px;
+    justify-content: space-between;
+
+}
+.box{
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+.box h3{
+/*     color:#A1A27E ;
+ */    padding: 10px 0;
+    font-size: 20px;
+
+}
+.box p{
+/*     color:#A1A27E ;
+ */  font-size: 14px;
+    line-height: 1.6;
+}
+.box span {
+    font-size: x-large;
+    font-weight: bold;
+}
+.bnt{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 8px 15px;
+    /*background: #A1A27E;*/
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+#box1 h3 , p , span {
+    color:#A1A27E ;
+
+}
+#box1 .bnt {
+    background: #A1A27E;
+}
+
+#box2 h3 , p , span {
+    color:#D7A28C ;
+
+}
+#box2 a {
+    background: #D7A28C;
+}
+#box3 h3 , p , span {
+    color:#CA7C5C ;
+
+}
+#box3 .bnt {
+    background: #CA7C5C;
+}
+#box4 h3 ,p , span {
+    color:#BF8959;
+
+}
+#box4 .bnt {
+    background: #BF8959;
+}
+.bnt:hover{
+    letter-spacing: 1px;
+}
+.box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2) ;
+}
+footer{
+    position: relative;
+}
+footer{
+    width: 100%;
+    background-color: #222;
+    font-size: 14px;
+    margin-top: 137px;
+    padding: 10px 0;
+    text-align: center;
+     
+}
+footer p{
+    color: #fff;
+}
+footer p span{
+    color:#CA7C5C;
+}
+@media (max-width:770px){
+    .wrapper{
+        padding: 20px;
+
+    }
+}
